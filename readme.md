@@ -15,7 +15,7 @@ THREATMOD GPT is an AI-powered threat modelling tool that leverages Large Langua
 
 ## Star the Repo
 
-If you find STRIDE GPT useful, please consider starring the repository on GitHub. This helps more people discover the tool. Your support is greatly appreciated! ⭐
+If you find THREATMOD GPT useful, please consider starring the repository on GitHub. This helps more people discover the tool. Your support is greatly appreciated! ⭐
 
 ## Features
 - Simple and user-friendly interface
