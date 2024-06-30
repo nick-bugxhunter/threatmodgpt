@@ -38,7 +38,7 @@ If you find STRIDE GPT useful, please consider starring the repository on GitHub
 
 ## Talk at Open Security Summit
 
-In January 2024 I gave a talk about STRIDE GPT at the [Open Security Summit](https://open-security-summit.org/sessions/2024/mini-summits/jan/threat-modeling/ai-driven-threat-modelling-with-stride-gpt/). During the talk, I discussed the project's inception, its core functionalities, recent updates, and some future plans. You can watch the full presentation below:
+In January 2024 I gave a talk about THREATMOD GPT at the [Open Security Summit](https://open-security-summit.org/sessions/2024/mini-summits/jan/threat-modeling/ai-driven-threat-modelling-with-stride-gpt/). During the talk, I discussed the project's inception, its core functionalities, recent updates, and some future plans. You can watch the full presentation below:
 
 [![Open Security Summit Talk](https://i3.ytimg.com/vi/_eOcezCeM1M/maxresdefault.jpg)](https://youtu.be/_eOcezCeM1M?si=88bjQ2M-_sCyIioi)
 
@@ -48,9 +48,9 @@ This video is an excellent resource for anyone interested in understanding how S
 
 ### Version 0.8 (latest)
 
-Version 0.8 introduces new features and improvements that enhance STRIDE GPT's capabilities and user experience. Here's what's new:
+Version 0.8 introduces new features and improvements that enhance THREATMOD GPT's capabilities and user experience. Here's what's new:
 
-- **DREAD Risk Scoring**: STRIDE GPT now supports DREAD risk scoring, allowing users to assign risk scores to identified threats based on the DREAD model. This feature provides a more comprehensive threat assessment and helps prioritise mitigation efforts.
+- **DREAD Risk Scoring**: THREATMOD GPT now supports DREAD risk scoring, allowing users to assign risk scores to identified threats based on the DREAD model. This feature provides a more comprehensive threat assessment and helps prioritise mitigation efforts.
 
 - **Gherkin Test Cases**: Users can now generate Gherkin test cases based on the identified threats. This feature helps bridge the gap between threat modelling and testing, ensuring that security considerations are integrated into the testing process.
 
@@ -60,7 +60,7 @@ Version 0.8 introduces new features and improvements that enhance STRIDE GPT's c
 
 Release highlights:
 
-- **Multi-Modal Threat Modelling**: STRIDE GPT now supports multi-modal threat modelling using OpenAI's GPT-4o and GPT-4-Turbo models. Users can provide an image of an architecture diagram, flowchart, or other visual representations of their application to enhance the threat modelling process.
+- **Multi-Modal Threat Modelling**: THREATMOD GPT now supports multi-modal threat modelling using OpenAI's GPT-4o and GPT-4-Turbo models. Users can provide an image of an architecture diagram, flowchart, or other visual representations of their application to enhance the threat modelling process.
 - **Google AI Integration**: I've added support for Gemini 1.5 Pro via the Google AI API. Please note that Gemini doesn't consistently generate JSON output so you may need to retry some requests. In addition, Attack Trees can't be generated using Google AI models because of Google's safety restrictions.
 - **Refactored Codebase**: I've refactored some parts of the codebase to improve maintainability and readability. This should make it easier to add new features and enhancements in future releases.
 - **Bug Fixes**: Minor bug fixes and error handling improvements.
@@ -86,7 +86,7 @@ Release highlights:
 Release highlights:
 
 - **Azure OpenAI Service Integration**: Users can now opt to use OpenAI 1106-preview models hosted on the Azure OpenAI Service, in addition to the standard OpenAI API.
-- **Docker Container Image**: To make it easier to deploy STRIDE GPT on public and private clouds, the tool is now available as a [Docker container image](https://hub.docker.com/repository/docker/mrwadams/stridegpt/general) on Docker Hub.
+- **Docker Container Image**: To make it easier to deploy THREATMOD GPT on public and private clouds, the tool is now available as a [Docker container image](https://hub.docker.com/repository/docker/mrwadams/stridegpt/general) on Docker Hub.
 
 ### Version 0.4
 
@@ -102,7 +102,7 @@ Release highlights:
 
 Release highlights:
 
-- **Threat Mitigations**: STRIDE GPT can now suggest potential mitigations for the threats identified in the threat modelling phase. This helps users develop strategies to prevent or minimise the impact of the identified threats.
+- **Threat Mitigations**: THREATMOD GPT can now suggest potential mitigations for the threats identified in the threat modelling phase. This helps users develop strategies to prevent or minimise the impact of the identified threats.
 - **Downloadable Output**: Users can now download the generated threat model, attack tree, and mitigations as Markdown files directly from the application. This makes it easy to share and document the generated outputs.
 - **Improved User Interface**: I've further refined the user interface to provide a smoother and more intuitive user experience. The application layout has been optimised for better readability and usability.
 - **Updated GPT Models**: STRIDE GPT now supports the latest 0613 versions of the GPT-3.5-turbo and GPT-4 models. These updated models provide improved performance and increased control over the generated output.
@@ -114,7 +114,7 @@ Release highlights:
 
    - **Attack Tree Generation**: In addition to generating threat models, STRIDE GPT can now generate attack trees for your applications based on the provided details. This helps users better understand potential attack paths for their applications.
    - **Attack Tree Visualisation**: This is an experimental feature that allows users to visualise the generated attack tree directly in the app using Mermaid.js. This provides a more interactive experience within the STRIDE GPT interface.
-   - **GPT-4 Model Support**: STRIDE GPT now supports the use of OpenAI's GPT-4 model, provided the user has access to the GPT-4 API. This allows users to leverage the latest advancements in GPT technology to generate more accurate and comprehensive threat models and attack trees.
+   - **GPT-4 Model Support**: THREATMOD GPT now supports the use of OpenAI's GPT-4 model, provided the user has access to the GPT-4 API. This allows users to leverage the latest advancements in GPT technology to generate more accurate and comprehensive threat models and attack trees.
    - **Improved Layout and Organisation**: I've restructured the app layout to make it easier to navigate and use. Key sections, such as Threat Model and Attack Tree, are now organised into collapsible sections for a cleaner and more intuitive user experience.
 
 
@@ -130,7 +130,7 @@ Release highlights:
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/mrwadams/stride-gpt.git
+    git clone https://github.com/mrwadams/riskmodgpt.git
     ```
 
 2. Change to the cloned repository directory:
@@ -150,7 +150,7 @@ Release highlights:
 1. Pull the Docker image from Docker Hub:
 
     ```bash
-    docker pull mrwadams/stridegpt:latest
+    docker pull mrwadams/riskmodgpt:latest
     ```
 
 ## Usage
@@ -172,13 +172,13 @@ Release highlights:
 1. Run the Docker container:
 
     ```bash
-    docker run -p 8501:8501 mrwadams/stridegpt
+    docker run -p 8501:8501 mrwadams/riskmodgpt
     ```
     This command will start the container and map port 8501 (default for Streamlit apps) from the container to your host machine.
 
 2. Open a web browser and navigate to `http://localhost:8501` to access the app running inside the container.
 
-3. Follow the steps in the Streamlit interface to use STRIDE GPT.
+3. Follow the steps in the Streamlit interface to use THREATMOD GP.
 
 ## Contributing
 
