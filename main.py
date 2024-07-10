@@ -359,20 +359,7 @@ understanding possible vulnerabilities and attack vectors. Use this tab to gener
 
             authentication = st.multiselect(
                 "What authentication methods are supported by the application?",
-                auth_methods = [
-                        "01:SSO with OAuth2 and MFA",
-                        "02:SSO with OpenID Connect and JWT",
-                        "03:OAuth2 with Resource Owner Password Credentials and MFA",
-                         "04:JWT with Client Credentials Grant and API Gateway",
-                         "05:SSO with SAML and MFA",
-                         "06:OAuth2 with Implicit Grant and JWT",
-                         "07:Certificate-Based Authentication with OAuth2 and JWT",
-                         "08:Social Authentication with OAuth2 and JWT",
-                         "09:Passwordless Authentication with Magic Link and JWT",
-                         "10:Federated Identity with OAuth2, OpenID Connect, and MFA",
-                         "11:Basic Password Authentication",
-                         "12:Username and Password",
-                ],
+                auth_methods = ["SSO", "MFA", "OAUTH2", "Basic"],
                 key="authentication",
             )
 
