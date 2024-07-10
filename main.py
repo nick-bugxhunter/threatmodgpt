@@ -46,7 +46,7 @@ def mermaid(code: str, height: int = 500) -> None:
 # ------------------ Streamlit UI Configuration ------------------ #
 
 st.set_page_config(
-    page_title="STRIDE GPT",
+    page_title="THREATMOD GPT",
     page_icon=":shield:",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -54,10 +54,10 @@ st.set_page_config(
 
 # ------------------ Sidebar ------------------ #
 
-st.sidebar.image("logo.png")
+st.sidebar.image("logo.webp")
 
 # Add instructions on how to use the app to the sidebar
-st.sidebar.header("How to use STRIDE GPT")
+st.sidebar.header("How to use THREATMOD GPT")
 
 with st.sidebar:
     # Add model selection input field to the sidebar
