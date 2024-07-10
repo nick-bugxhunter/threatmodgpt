@@ -340,12 +340,12 @@ understanding possible vulnerabilities and attack vectors. Use this tab to gener
             sensitive_data = st.selectbox(
                 label="What is the highest sensitivity level of the data processed by the application?",
                 options=[
-                    "Top Secret",
-                    "Secret",
-                    "Confidential",
-                    "Restricted",
-                    "Unclassified",
-                    "None",
+                    "PUBLIC",
+                    "INTERNAL",
+                    "CONFIDENTIAL",
+                    "RESTRICTED",
+                    "UNCLASSIFIED",
+                    "NONE",
                 ],
                 key="sensitive_data",
             )
