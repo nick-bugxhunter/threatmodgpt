@@ -371,7 +371,7 @@ understanding possible vulnerabilities and attack vectors. Use this tab to gener
                          "09:Passwordless Authentication with Magic Link and JWT",
                          "10:Federated Identity with OAuth2, OpenID Connect, and MFA",
                          "11:Basic Password Authentication",
-                         "12:Username and Password"
+                         "12:Username and Password",
                 ],
                 key="authentication",
             )
