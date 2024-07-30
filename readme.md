@@ -38,7 +38,13 @@ If you find THREATMOD GPT useful, please consider starring the repository on Git
 
 ## Changelog
 
-### Version 0.8 (latest)
+### Version 0.0 (latest)
+
+Version 0.9 introduces couple of new enhancements. Here's what's new:
+
+- **Auth methods**: Expanded the list of supported authentication methods. Each auth method has a unique
+
+- **Sensitivity labels**: Changed the sensitivity level labels to more common labels uses within the enterprise
 
 Version 0.8 introduces new features and improvements that enhance THREATMOD GPT's capabilities and user experience. Here's what's new:
 
