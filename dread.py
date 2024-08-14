@@ -1,7 +1,7 @@
 import json
+import os
 import google.generativeai as genai
-from mistralai.client import MistralClient
-from mistralai.models.chat_completion import ChatMessage
+from mistralai import Mistral, UserMessage
 from openai import OpenAI
 from openai import AzureOpenAI
 
@@ -147,7 +147,7 @@ def get_dread_assessment_google(google_api_key, google_model, prompt):
 
 # Function to get DREAD risk assessment from the Mistral model's response.
 def get_dread_assessment_mistral(mistral_api_key, mistral_model, prompt):
-    client = MistralClient(api_key=mistral_api_key)
+    client = Mistral(api_key=mistral_api_key)
 
     response = client.chat(
         model = mistral_model,
