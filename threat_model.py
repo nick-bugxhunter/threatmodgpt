@@ -3,8 +3,7 @@
 import json
 import requests
 import google.generativeai as genai
-from mistralai.client import MistralClient
-from mistralai.models.chat_completion import ChatMessage
+from mistralai import Mistral, UserMessage
 from openai import OpenAI
 from openai import AzureOpenAI
 
